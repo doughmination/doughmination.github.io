@@ -157,6 +157,12 @@ body {
   filter: invert(78%) sepia(36%) saturate(640%) hue-rotate(280deg) brightness(105%);
 }
 
+/* Keep multicolor icons (e.g. git.gay) at their true colors */
+.icon.raw,
+.link-card:hover .icon.raw {
+  filter: none;
+}
+
 /* Details revealed on hover as a tooltip */
 .link-text {
   position: absolute;
