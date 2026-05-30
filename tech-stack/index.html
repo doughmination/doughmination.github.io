@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clove Twilight - Link Center</title>
+    <title>Clove Twilight - Tech Stack</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Link Center for Clove Twilight" />
+    <meta name="description" content="Tech Stack for Clove Twilight" />
     <meta name="keywords" content="Portfolio, Personal, Developer" />
     <meta name="author" content="doughmination" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://clove.is-a.dev" />
+    <link rel="canonical" href="https://clove.is-a.dev/tech-stack" />
 
     <!-- Alternate for mobile -->
-    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://clove.is-a.dev" />
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://clove.is-a.dev/tech-stack" />
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#f5c2e7" />
@@ -26,15 +26,15 @@
     <!-- Open Graph / Discord / Facebook -->
     <meta property="og:site_name" content="clove.is-a.dev" />
     <meta property="og:title" content="Clove Twilight" />
-    <meta property="og:description" content="Link Center for Clove Twilight" />
+    <meta property="og:description" content="Tech Stack for Clove Twilight" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://clove.is-a.dev" />
+    <meta property="og:url" content="https://clove.is-a.dev/tech-stack" />
     <meta property="og:locale" content="en_GB" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Clove Twilight" />
-    <meta name="twitter:description" content="Link Center for Clove Twilight" />
+    <meta name="twitter:description" content="Tech Stack for Clove Twilight" />
 </head>
 
 <body>
@@ -45,7 +45,19 @@
             <a class="nav-link selected" data-href="/tech-stack">Tech Stack</a>
         </nav>
     </header>
-    <a rel="me" href="https://mastodon.social/@doughmination" style="display: none;"></a>
+
+    <a class="now-playing" id="now-playing" target="_blank" rel="noopener" hidden>
+        <img class="np-art" alt="" referrerpolicy="no-referrer">
+        <span class="np-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="np-text">
+            <span class="np-label">Now playing</span>
+            <span class="np-track"></span>
+            <span class="np-artist"></span>
+        </span>
+    </a>
+
+    <a class="version-tag" data-href="/changelog" title="Changelog">v1.4.0</a>
+
     <main class="hub">
         <header class="hub-header">
             <img class="pfp" src="https://cdn.discordapp.com/avatars/1464890289922641993/83c6f674b7bdf901ab7b1e65204795ca.png" alt="Clove Twilight avatar">
@@ -145,6 +157,8 @@
 
     <script src="/js/cat.js" data-cat="/images/oneko.gif"></script>
     <script src="/js/nav.js"></script>
+    <script src="/js/now-playing.js"></script>
+    <script src="/js/cat-modes.js"></script>
 </body>
 
 </html>
