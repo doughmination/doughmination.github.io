@@ -6,6 +6,7 @@ const CAT_MODES = [
   { name: "Vaporwave Cat", filter: "invert(60%) sepia(90%) saturate(3000%) hue-rotate(280deg) brightness(0.95)" },
   { name: "Gold Cat", filter: "invert(75%) sepia(85%) saturate(1400%) hue-rotate(8deg) brightness(1.0)" },
   { name: "Sapphire Cat", filter: "invert(45%) sepia(90%) saturate(2500%) hue-rotate(200deg) brightness(1.0)" },
+  { name: "Dusty Cat", filter: "invert(60%)" },
 ];
 const UNLOCK_EVERY = 5; // clicks needed to unlock each new mode
 const SPRITE = "/images/oneko.gif";

@@ -200,20 +200,11 @@ body::before {
   width: 30px;
   height: 30px;
   flex-shrink: 0;
-  filter: invert(86%) sepia(8%) saturate(900%) hue-rotate(190deg) brightness(105%);
+  filter: brightness(0) invert(1);
   transition: filter 0.15s ease;
 }
 
 .link-card:hover .icon {
-  filter: invert(78%) sepia(36%) saturate(640%) hue-rotate(280deg) brightness(105%);
-}
-
-/* git.gay: white by default, true pride colors on hover */
-.icon.raw {
-  filter: brightness(0) invert(1);
-}
-
-.link-card:hover .icon.raw {
   filter: none;
 }
 
@@ -433,6 +424,17 @@ body::before {
   color: var(--crust);
   font-weight: 700;
   margin-left: 14px;
+}
+
+.nav-link.is-a-dev {
+  background: var(--surface-1);
+  border-color: var(--surface-2);
+  color: var(--text);
+}
+
+.nav-link.is-a-dev:hover {
+  border-color: var(--saphire);
+  transform: translateX(2px);
 }
 
 /* Rotated triangle pointing at the selected item */
