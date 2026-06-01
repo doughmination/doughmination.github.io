@@ -31,42 +31,6 @@
   font-style: normal;
 }
 
-:root {
-  /* https://catppuccin.com/palette/ */
-  /* Catppuccin Mocha */
-  /* accents */
-  --rosewater: #f5e0dc;
-  --flamingo: #f2cdcd;
-  --pink: #f5c2e7;
-  --mauve: #cba6f7;
-  --red: #f38ba8;
-  --maroon: #eba0ac;
-  --peach: #fab387;
-  --yellow: #f9e2af;
-  --green: #a6e3a1;
-  --teal: #94e2d5;
-  --sky: #89dceb;
-  --saphire: #74c7ec;
-  --blue: #89b4fa;
-  /* a lovely new blue passport */
-  --lavender: #b4befe;
-  /* Text */
-  --text: #cdd6f4;
-  --subtext-0: #a6adc8;
-  --subtext-1: #bac2de;
-  --overlay-0: #6c7086;
-  --overlay-1: #7f849c;
-  --overlay-2: #9399b2;
-  --surface-0: #313244;
-  --surface-1: #45475a;
-  --surface-2: #585b70;
-  /* Backgrounds */
-  --base: #1e1e2e;
-  --mantle: #181825;
-  --crust: #11111b;
-  /* Is this the crusty crab? */
-}
-
 * {
   box-sizing: border-box;
 }
@@ -114,7 +78,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: url(/images/estrogen.svg) center / cover no-repeat;
+  background: url(/images/theme/estrogen.svg) center / cover no-repeat;
   filter: invert(86%) sepia(8%) saturate(900%) hue-rotate(190deg) brightness(105%);
   opacity: 0.05;
   pointer-events: none;
@@ -257,10 +221,6 @@ body::before {
 .link-sub {
   font-size: 0.78rem;
   color: var(--subtext-0);
-}
-
-.link-card.arch .link-title {
-  color: var(--pink);
 }
 
 /* "Now playing" widget, pinned top-left */
@@ -575,28 +535,6 @@ body:has(.tech-stack) .hub {
   transform: translateX(-50%) translateY(0);
 }
 
-/* ===== Version tag (top-right) ===== */
-.version-tag {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 6;
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-  background: var(--surface-0);
-  border: 1px solid var(--surface-1);
-  color: var(--subtext-0);
-  font-size: 0.72rem;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.version-tag:hover {
-  color: var(--pink);
-  border-color: var(--pink);
-}
-
 /* ===== Changelog page ===== */
 html:has(.changelog),
 body:has(.changelog) {
@@ -786,11 +724,6 @@ body:has(.changelog) .hub {
   font-weight: 500;
 }
 
-.cat-lock {
-  font-size: 0.62rem;
-  color: var(--subtext-0);
-}
-
 .cat-hint {
   margin: 0.85rem 0 0;
   font-size: 0.68rem;
@@ -802,4 +735,37 @@ body:has(.changelog) .hub {
   .cat-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* ============================================================
+   Theme switcher — icon button, top-right corner
+   ============================================================ */
+.beta-bar {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 7;
+}
+
+.beta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  border-radius: 999px;
+  background: var(--surface-0);
+  border: 1px solid var(--surface-1);
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.beta-btn:hover {
+  border-color: var(--pink);
+  transform: translateY(2px);
+}
+
+.beta-icon {
+  width: 22px;
+  height: 22px;
+  display: block;
 }

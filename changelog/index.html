@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clove Twilight - Changelog</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/themes/mocha.css">
+    <link rel="stylesheet" href="/css/themes/macchiato.css">
+    <link rel="stylesheet" href="/css/themes/frappe.css">
+    <link rel="stylesheet" href="/css/themes/latte.css">
+    <script>try{var f=localStorage.getItem('ctpFlavor');document.documentElement.setAttribute('data-flavor',['mocha','macchiato','frappe','latte'].indexOf(f)>=0?f:'mocha');}catch(e){document.documentElement.setAttribute('data-flavor','mocha');}</script>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg">
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="Changelog for doughmination.is-a.dev" />
@@ -24,7 +29,7 @@
     <meta name="theme-color" content="#f5c2e7" />
 
     <!-- Open Graph / Discord / Facebook -->
-    <meta property="og:image" content="https://doughmination.is-a.dev/images/favicon.png" />
+    <meta property="og:image" content="https://doughmination.is-a.dev/images/favicon/favicon.png" />
     <meta property="og:site_name" content="doughmination.is-a.dev" />
     <meta property="og:title" content="Clove Twilight | Changelog" />
     <meta property="og:description" content="Changelog for Clove Twilight" />
@@ -33,7 +38,7 @@
     <meta property="og:locale" content="en_GB" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:image" content="https://doughmination.is-a.dev/images/favicon.png" />
+    <meta name="twitter:image" content="https://doughmination.is-a.dev/images/favicon/favicon.png" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Clove Twilight | Changelog" />
     <meta name="twitter:description" content="Changelog for Clove Twilight" />
@@ -57,8 +62,6 @@
         </span>
     </a>
 
-    <a class="version-tag" data-href="/changelog" title="Changelog">v1.5.0-rc</a>
-
     <main class="hub">
         <header class="hub-header">
             <h1>Changelog</h1>
@@ -66,6 +69,26 @@
         </header>
 
         <section class="changelog" aria-label="Update history">
+            <article class="release">
+                <header class="release-head">
+                    <span class="release-version">v1.6.0-beta</span>
+                    <time class="release-date">2026-06-01</time>
+                </header>
+                <ul class="release-notes">
+                    <li><span class="tag tag-add">Added</span> Catppuccin theme switcher — the icon button in the
+                        top-right corner cycles Mocha · Macchiato · Frappé · Latte; choice is remembered between
+                        visits</li>
+                    <li><span class="tag tag-add">Added</span> one official-palette CSS file per flavor</li>
+                    <li><span class="tag tag-change">Changed</span> merged the oneko cat and its secret modes into a
+                        single cat.js; dropped dead/duplicate code</li>
+                    <li><span class="tag tag-change">Changed</span> removed the corner version tag — this changelog is
+                        now reachable only via /changelog directly</li>
+                    <li><span class="tag tag-change">Changed</span> doughmination is now the beta playground — features
+                        bake here before graduating to clove.is-a.dev</li>
+                        <li><span class="tag tag-change">Changed</span> </li>
+                </ul>
+            </article>
+
             <article class="release">
                 <header class="release-head">
                     <span class="release-version">v1.5.0-rc</span>
@@ -153,27 +176,27 @@
 
     <aside class="badges" aria-label="System badges">
         <span class="badge">
-            <img class="badge-icon" src="/images/amd.svg" alt="">
+            <img class="badge-icon" src="/images/misc/amd.svg" alt="">
             AMD Purist
         </span>
         <span class="badge">
-            <img class="badge-icon" src="/images/arch.svg" alt="">
+            <img class="badge-icon" src="/images/misc/arch.svg" alt="">
             I use arch btw
         </span>
         <span class="badge">
-            <img class="badge-icon" src="/images/debian.svg" alt="">
+            <img class="badge-icon" src="/images/misc/debian.svg" alt="">
             Debian Professional
         </span>
         <span class="badge">
-            <img class="badge-icon" src="/images/apple.svg" alt="">
+            <img class="badge-icon" src="/images/misc/apple.svg" alt="">
             Apple Ecosystem Enthusiast
         </span>
     </aside>
 
-    <script src="/js/cat.js" data-cat="/images/oneko.gif"></script>
+    <script src="/js/cat.js" data-cat="/images/misc/oneko.gif"></script>
     <script src="/js/nav.js"></script>
     <script src="/js/now-playing.js"></script>
-    <script src="/js/cat-modes.js"></script>
+    <script src="/js/flavors.js"></script>
 </body>
 
 </html>
